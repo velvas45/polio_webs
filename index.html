@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Folio</title>
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="stylesheet" href="./assets/styles/services.css" />
+    <link rel="stylesheet" href="./assets/styles/swiper.css" />
+    <link rel="stylesheet" href="./assets/styles/job.css" />
+    <link rel="stylesheet" href="./assets/styles/footer.css" />
+    <!-- swiper cdn -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/script/index.js" defer type="module"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="header">
+        <a href="#" class="header__logo">
+          <img src="./assets/images/logo_symbol.png" alt="logo-polio" />
+          <p>folio<span></span></p>
+        </a>
+
+        <!-- desktop version -->
+        <div>
+          <ul class="navigation-desk">
+            <li class="navigation__item-desk">
+              <a href="#about">About</a>
+            </li>
+            <li class="navigation__item-desk"><a href="#work">Work</a></li>
+            <li class="navigation__item-desk">
+              <a href="#services">Services</a>
+            </li>
+            <li class="navigation__item-desk"><a href="#jobs">Jobs</a></li>
+          </ul>
+        </div>
+
+        <button type="button" class="contact-us-btn btn btn--dark">
+          Contact Us
+        </button>
+        <!-- end desktop version -->
+      </div>
+
+      <div class="burger-icon" id="menu_icon">
+        <div class="bar1" id="bar1"></div>
+        <div class="bar2" id="bar2"></div>
+      </div>
+
+      <!-- Sidebar Section only mobile version-->
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar__header">
+          <a href="#" class="sidebar__logo">
+            <img src="./assets/images/logo_symbol.png" alt="logo-polio" />
+            <p>folio<span></span></p>
+          </a>
+
+          <!-- <div class="sidebar-burger-icon" id="close_menu">
+            <div class="bar1-sidebar"></div>
+            <div class="bar2-sidebar"></div>
+          </div> -->
+        </div>
+        <div class="sidebar__content">
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a id="sidebar_link" href="#about" class="active-menu">About</a>
+            </li>
+            <li class="navigation__item">
+              <a id="sidebar_link" href="#work">Work</a>
+            </li>
+            <li class="navigation__item">
+              <a id="sidebar_link" href="#services">Services</a>
+            </li>
+            <li class="navigation__item">
+              <a id="sidebar_link" href="#jobs">Jobs</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__socmed">
+          <div class="sidebar__socmed-item">
+            <img
+              src="./assets/images/icons/logo-facebook.svg"
+              alt="facebook icon"
+            />
+          </div>
+          <div class="sidebar__socmed-item">
+            <img
+              src="./assets/images/icons/logo-youtube.svg"
+              alt="youtube icon"
+            />
+          </div>
+          <div class="sidebar__socmed-item">
+            <img
+              src="./assets/images/icons/logo-instagram.svg"
+              alt="instagram icon"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- end sidebar section -->
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Banner Content -->
+    <section id="banner">
+      <div class="path--decoration">
+        <svg
+          width="643"
+          height="821"
+          viewBox="0 0 643 821"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M67 0.999856C36.73 7.52986 12.57 32.1199 3.56001 61.3199C-5.76999 91.5699 3.66001 123.32 26.95 144.52C49.44 164.97 82.95 174.62 112.05 163.44C139.27 152.98 162.92 123.15 149.78 93.3299C138.68 68.1499 105.78 53.4299 80.08 64.4199C54.38 75.4099 41.89 106.17 46.59 132.73C52.53 166.24 85.09 184.73 114.86 194.1C150.92 205.52 192.93 207.2 222.47 233.48C245.76 254.2 257.18 286.48 254.86 317.31C253.799 332.759 248.901 347.7 240.61 360.78C231.44 374.97 215.79 387.12 198.53 388.78C179.33 390.63 165.53 375.9 164.14 357.41C162.63 337.08 174.95 319.31 186.66 303.88C209.03 274.42 237.66 245.09 274.82 236.01C307.73 228.01 347.31 237.07 364.76 268.4C384.54 303.92 370.46 346.31 349.49 377.65C338.11 394.65 324.58 410.16 311.26 425.65C297.72 441.4 284.06 457.07 271.26 473.46C247.04 504.54 225.91 538.65 216.8 577.39C208.25 613.73 210.8 652.81 230.97 685C249.71 715 279.97 736.17 312.15 749.74C352.35 766.74 396.05 773.42 438.65 781.56L575.29 807.68L640.81 820.2C642.22 820.47 642.81 818.31 641.41 818.03L506.41 792.22C462.49 783.83 418.26 776.4 374.64 766.56C335.81 757.79 296.86 745.02 265.43 719.75C251.51 708.56 239.27 695.13 230.38 679.57C220.836 662.573 215.414 643.574 214.55 624.1C210.2 539.39 272.94 474.48 323.67 414.59C347.83 386.05 372.67 354.27 375.99 315.59C377.44 298.87 374.79 281.39 366.4 266.68C358.671 253.406 346.723 243.099 332.46 237.4C301.68 224.75 267.01 231.62 239.63 249.05C224.33 258.82 211 271.4 199.1 285C186.95 298.9 174.24 314.17 166.86 331.22C160.58 345.74 159.15 363.63 168.41 377.29C176.69 389.49 191.35 393.35 205.22 389.86C235.43 382.26 252.88 351.67 256.57 322.61C260.22 293.79 251.79 263.24 232.95 241C208.95 212.71 171.49 205.92 137.24 197.78C104.8 190.08 64.97 177.09 51.74 142.9C41.17 115.59 52.51 79.3999 80.01 66.8999C107.79 54.2499 145.65 73.8999 150.73 104.19C156.83 140.49 117.17 166.29 85.12 165.92C53.07 165.55 21.73 144.92 8.52001 115.7C-5.20999 85.2799 4.43001 49.2799 27.16 25.9399C38.0938 14.542 52.1529 6.63056 67.57 3.19986C69 2.88986 68.38 0.729856 67 0.999856Z"
+            fill="#D1ECFD"
+          />
+        </svg>
+      </div>
+      <div class="banner__section">
+        <div class="banner__leftcontent">
+          <h1>Stand Out from The Crowd.</h1>
+          <p>
+            Agency is a full-service agency, busy designing and building
+            beautiful digital products, brands, and experiences.
+          </p>
+          <button type="button" class="btn btn--primary">Recent Work</button>
+          <div class="banner__scrolldown">
+            <button type="button" class="btn-scroll">
+              <img src="./assets/images/icons/arrow-s.svg" alt="arrow" />
+            </button>
+            <span>Scroll down</span>
+          </div>
+        </div>
+        <div class="banner__rightcontent">
+          <img src="./assets/images/banner.png" alt="banner images" />
+        </div>
+      </div>
+    </section>
+    <!-- end Banner Content -->
+
+    <!-- About Content -->
+    <section id="about" class="about">
+      <div class="section__shape">
+        <svg
+          width="802"
+          height="1052"
+          viewBox="0 0 802 1052"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M350.073 43.0215C359.009 17.2675 383.277 0 410.537 0H802V1052H0L350.073 43.0215Z"
+            fill="url(#paint0_linear_2_587)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_2_587"
+              x1="693.626"
+              y1="1052"
+              x2="693.626"
+              y2="284.313"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#323259" stop-opacity="0.01" />
+              <stop offset="1" stop-color="#323259" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="section__title">
+        <div class="section__title-breadcrumb">
+          <div>
+            <img
+              src="./assets/images/logo_symbol.png"
+              alt="logo-polio"
+              class="section__title-img"
+              height="16"
+            />
+          </div>
+          <div class="section__title-span">
+            <span class="number">01</span> <span class="text">Who We Are</span>
+          </div>
+        </div>
+        <h4 class="section__title-h4">
+          We Make Designs that <br />
+          Lead and Inspire.
+        </h4>
+      </div>
+
+      <div class="about__main-content">
+        <!-- mobile base version -->
+        <select
+          name="select-year"
+          id="select-year"
+          class="about__content-mobile"
+        >
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+        </select>
+        <!-- end mobile base version -->
+        <!-- desktop base version -->
+        <ul class="about__content-desktop">
+          <li id="2018">
+            <span class="before__label"></span>
+            <span class="option__label">2018</span>
+          </li>
+          <li id="2019">
+            <span class="before__label"></span>
+            <span class="option__label">2019</span>
+          </li>
+          <li id="2020">
+            <span class="before__label"></span>
+            <span class="option__label">2020</span>
+          </li>
+          <li id="2021">
+            <span class="before__label"></span>
+            <span class="option__label">2021</span>
+          </li>
+          <li id="2022">
+            <span class="before__label"></span>
+            <span class="option__label">2022</span>
+          </li>
+        </ul>
+        <!-- end desktop base version -->
+        <div class="about__image">
+          <img
+            src="./assets/images/img-one.png"
+            id="image-content"
+            alt="image_one"
+          />
+        </div>
+      </div>
+      <div class="about__secondary-content">
+        <div class="about__secondary-wrapper-left">
+          <div class="about__secondary-leftcontent">
+            <h6 id="content-random-title">
+              A design team building a curated marketplace for UI designers.
+            </h6>
+            <span id="content-random-subtitle">
+              4,404 curated design resources to energize your creative workflow.
+              We're a growing family of 334,531 designers and makers from around
+              the world
+            </span>
+
+            <button type="button" class="btn btn--primary">Contact Us</button>
+          </div>
+        </div>
+        <div class="about__secondary-rightcontent">
+          <div class="about__circle-info">
+            <h1 id="content-random-number">28</h1>
+            <p>Bigest Branding</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end About Content -->
+
+    <!-- Work Content -->
+    <section id="work" class="work">
+      <div class="section__title">
+        <div class="section__title-breadcrumb">
+          <div>
+            <img
+              src="./assets/images/logo_symbol.png"
+              alt="logo-polio"
+              class="section__title-img"
+              height="16"
+            />
+          </div>
+          <div class="section__title-span">
+            <span class="number">02</span>
+            <span class="text">You may also like</span>
+          </div>
+        </div>
+        <div class="work__wrappertitle">
+          <h4 class="section__title-h4">Recent Work.</h4>
+          <p>
+            Agency is a full-service agency, busy designing and building
+            beautiful digital products, brands, and experiences.
+          </p>
+        </div>
+      </div>
+
+      <!-- content -->
+      <div class="work__content">
+        <div class="work__content-left">
+          <div class="work__card first">
+            <div class="work__card-feature">Featured Product</div>
+            <img src="./assets/images/porto-1.png" alt="image-porto-1" />
+          </div>
+          <div class="work__content-text">
+            <h4>Bento 3D Illustration</h4>
+            <p>
+              Agency is a full-service agency, busy designing and building
+              beautiful digital products, brands, and experiences.
+            </p>
+          </div>
+          <div class="work__content-wrapperimg">
+            <img
+              src="./assets/images/icons/arrow-right.svg"
+              alt="icons arrow right"
+            />
+          </div>
+        </div>
+        <div class="work__content-right">
+          <div class="work__card">
+            <img src="./assets/images/porto-2.png" alt="image-porto-1" />
+          </div>
+
+          <div class="work__content-text">
+            <h4>Bento Vol.3</h4>
+            <p>
+              Agency is a full-service agency, busy designing and building
+              beautiful digital products, brands, and experiences.
+            </p>
+          </div>
+          <div class="work__content-wrapperimg">
+            <img
+              src="./assets/images/icons/arrow-right.svg"
+              alt="icons arrow right"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Work Content -->
+
+    <!-- Services Content -->
+    <section id="services" class="services">
+      <div class="section__shape">
+        <svg
+          width="802"
+          height="1052"
+          viewBox="0 0 802 1052"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M350.073 43.0215C359.009 17.2675 383.277 0 410.537 0H802V1052H0L350.073 43.0215Z"
+            fill="url(#paint0_linear_2_587)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_2_587"
+              x1="693.626"
+              y1="1052"
+              x2="693.626"
+              y2="284.313"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#323259" stop-opacity="0.01" />
+              <stop offset="1" stop-color="#323259" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="section__title">
+        <div class="section__title-breadcrumb">
+          <div>
+            <img
+              src="./assets/images/logo_symbol.png"
+              alt="logo-polio"
+              class="section__title-img"
+              height="16"
+            />
+          </div>
+          <div class="section__title-span">
+            <span class="number">03</span>
+            <span class="text">Folio Agency</span>
+          </div>
+        </div>
+        <h4 class="section__title-h4">By the Numbers.</h4>
+      </div>
+
+      <div class="services__main-content">
+        <div class="services__content-left">
+          <div class="services__qty">
+            <span>20</span>
+          </div>
+          <h6>Pre-build Scenes 🔥</h6>
+          <hr />
+          <p>
+            Bento is the first fully editable, 3D visual design system with
+            global auto-updatable style guides built right in Figma.
+          </p>
+          <div class="services__download">
+            <button type="button" class="btn-download">
+              <img src="./assets/images/icons/arrow-s.svg" alt="arrow" />
+            </button>
+            <span>Download</span>
+          </div>
+        </div>
+        <div class="services__content-right">
+          <div class="services__qty">
+            <span>40</span>
+            <span class="qty-plus">+</span>
+          </div>
+          <h6>Scene Objects</h6>
+          <hr />
+          <p>
+            Bento is the first fully editable, 3D visual design system with
+            global auto-updatable style guides built right in Figma.
+          </p>
+          <div class="services__download">
+            <button type="button" class="btn-download">
+              <img src="./assets/images/icons/arrow-s.svg" alt="arrow" />
+            </button>
+            <span>Download</span>
+          </div>
+        </div>
+      </div>
+      <div class="services__secondary-content">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/img-one.png" alt="image 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/img-two.png" alt="image 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/img-three.png" alt="image 3" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/img-four.png" alt="image 4" />
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <img
+              src="./assets/images/icons/right-hover.svg"
+              alt="right arrow"
+            />
+          </div>
+          <div class="swiper-button-prev">
+            <img src="./assets/images/icons/left.svg" alt="left arrow" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services Content -->
+
+    <!-- Jobs Content -->
+    <section class="job" id="jobs">
+      <div class="job__content">
+        <div class="section__title">
+          <div class="section__title-breadcrumb">
+            <div>
+              <img
+                src="./assets/images/logo_symbol.png"
+                alt="logo-polio"
+                class="section__title-img"
+                height="16"
+              />
+            </div>
+            <div class="section__title-span">
+              <span class="number">04</span>
+              <span class="text">We are hiring</span>
+            </div>
+          </div>
+          <div class="work__wrappertitle">
+            <h4 class="section__title-h4">Jobs</h4>
+            <p>
+              Agency is a full-service agency, busy designing and building
+              beautiful digital products, brands, and experiences.
+            </p>
+            <div class="availabe__jobs">
+              <img
+                src="./assets/images/icons/arrow-right-circle-green.svg"
+                alt="arrow right"
+              />
+              <span>Available Jobs</span>
+            </div>
+          </div>
+        </div>
+        <div class="job__category">
+          <div class="card__job">
+            <div class="card__job-left">
+              <div class="card__job-title">
+                <h5>Graphic Designer</h5>
+                <span class="bagde"> 2 </span>
+              </div>
+              <p>2 years experience</p>
+              <img
+                src="./assets/images/icons/arrow-right-no-circle.svg"
+                alt="arrow right"
+              />
+            </div>
+
+            <div class="card__job-right">
+              <img src="./assets/images/porto-1.png" alt="image one" />
+            </div>
+          </div>
+          <div class="card__job">
+            <div class="card__job-left">
+              <div class="card__job-title">
+                <h5>Visual Designer</h5>
+              </div>
+              <p>2 years experience</p>
+              <img
+                src="./assets/images/icons/arrow-right-no-circle.svg"
+                alt="arrow right"
+              />
+            </div>
+
+            <div class="card__job-right">
+              <img src="./assets/images/porto-2.png" alt="image one" />
+            </div>
+          </div>
+          <div class="card__job">
+            <div class="card__job-left">
+              <div class="card__job-title">
+                <h5>Art Director</h5>
+              </div>
+              <p>2 years experience</p>
+              <img
+                src="./assets/images/icons/arrow-right-no-circle.svg"
+                alt="arrow right"
+              />
+            </div>
+
+            <div class="card__job-right">
+              <img src="./assets/images/porto-1.png" alt="image one" />
+            </div>
+          </div>
+          <div class="card__job">
+            <div class="card__job-left">
+              <div class="card__job-title">
+                <h5>Web Designer</h5>
+                <span class="bagde"> 6 </span>
+              </div>
+              <p>2 years experience</p>
+              <img
+                src="./assets/images/icons/arrow-right-no-circle.svg"
+                alt="arrow right"
+              />
+            </div>
+
+            <div class="card__job-right">
+              <img src="./assets/images/porto-2.png" alt="image one" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Job Content -->
+
+    <!-- Footer Content -->
+    <footer id="footer" class="footer">
+      <!-- footer banner desktop -->
+      <div class="footer__banner">
+        <div class="footer__content-main">
+          <img src="./assets/images/logo_symbol.png" alt="logo" />
+          <span>👋 Say hello</span>
+          <h5 class="footer__main-title">
+            A design team building a curated marketplace for UI designers.
+          </h5>
+        </div>
+        <div class="footer__content-secondary">
+          <div class="footer__content-banner">
+            <h2>Let’s talk about your next project</h2>
+          </div>
+          <div class="footer__content-banner">
+            <img src="./assets/images/SpeachBubble-V2.svg" alt="img" />
+            <div class="footer__content-link">
+              <p>Invest in your designs today!</p>
+
+              <img
+                src="./assets/images/icons/right-arrow-white.png"
+                alt="arrow"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer banner mobile -->
+      <div class="footer__banner-mobile">
+        <div class="footer__banner-main">
+          <img src="./assets/images/SpeachBubble-V2.svg" alt="img" />
+          <span>👋 Say hello</span>
+          <p>A design team building a curated marketplace for UI designers.</p>
+        </div>
+
+        <div class="footer__banner-second">
+          <h5>Let’s talk about your next project</h5>
+
+          <button type="button" class="btn btn--white">Contact Us</button>
+        </div>
+      </div>
+
+      <!-- footer text -->
+      <div class="footer__logo">
+        <img src="./assets/images/logo_symbol.png" alt="logo" />
+        <p>folio<span></span></p>
+      </div>
+
+      <div class="footer__desc">
+        <p>
+          Agency is a full-service agency, busy designing and building beautiful
+          digital products, brands, and experiences.
+        </p>
+
+        <!-- desktop -->
+        <div class="navigation__footer">
+          <ul>
+            <li class="navigation__item active-menu">
+              <a href="#about">About</a>
+            </li>
+            <li class="navigation__item"><a href="#work">Work</a></li>
+            <li class="navigation__item"><a href="#services">Services</a></li>
+            <li class="navigation__item"><a href="#jobs">Jobs</a></li>
+          </ul>
+        </div>
+
+        <!-- mobile -->
+        <select name="select-navigation" class="select-footer-mobile">
+          <option>
+            <a href="#about">About</a>
+          </option>
+          <option><a href="#work">Work</a></option>
+          <option><a href="#services">Services</a></option>
+          <option><a href="#jobs">Jobs</a></option>
+        </select>
+      </div>
+
+      <!-- footer info -->
+      <div class="footer__info">
+        <div class="sidebar__socmed">
+          <div class="sidebar__socmed-item">
+            <img
+              src="./assets/images/icons/logo-facebook.svg"
+              alt="facebook icon"
+            />
+          </div>
+          <div class="sidebar__socmed-item">
+            <img
+              src="./assets/images/icons/logo-youtube.svg"
+              alt="youtube icon"
+            />
+          </div>
+          <div class="sidebar__socmed-item">
+            <img
+              src="./assets/images/icons/logo-instagram.svg"
+              alt="instagram icon"
+            />
+          </div>
+        </div>
+        <span>© 2020, UI8 LLC.</span>
+        <div class="footer__info-socmed">
+          <p>Follow us</p>
+          <img src="./assets/images/icons/logo-facebook.svg" alt="logo" />
+          <img src="./assets/images/icons/logo-youtube.svg" alt="logo" />
+          <img src="./assets/images/icons/logo-instagram.svg" alt="logo" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- End Footer Content -->
+  </body>
+</html>

@@ -1,0 +1,333 @@
+.footer {
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.footer__banner {
+  display: none;
+}
+
+.footer__banner-mobile {
+  background-image: url(../images/bg-footer-banner-mobile.png);
+  border-radius: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer__banner-mobile .footer__banner-main {
+  height: 50%;
+  padding: 30px 37px;
+  border-bottom: 0.5px solid var(--white-color);
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--white-color);
+}
+
+.footer__banner-mobile .footer__banner-main p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+.footer__banner-mobile .footer__banner-main span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.footer__banner-mobile .footer__banner-main img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.footer__banner-mobile .footer__banner-second {
+  padding: 32px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  color: var(--white-color);
+}
+
+.footer__banner-mobile .footer__banner-second h5 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  /* or 125% */
+
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.footer__logo {
+  margin: 4rem auto 1.5rem;
+  justify-content: center;
+}
+
+.footer__desc {
+  width: 250px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  text-align: center;
+  color: var(--deactive-color);
+}
+
+.navigation__footer {
+  display: none;
+}
+
+.select-footer-mobile {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 2rem 0 0;
+  border: 1px solid var(--gray-color);
+  border-radius: 8px;
+}
+
+.footer__info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--deactive-color);
+  padding-bottom: 1rem;
+}
+
+.footer__info .sidebar__socmed {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer__info span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.footer__info-socmed {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__banner {
+    display: block;
+    background-color: var(--primary-color);
+    border-radius: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .footer__banner .footer__content-main {
+    padding: 128px 364px;
+    width: 100%;
+    border-bottom: 1px solid var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: var(--white-color);
+  }
+
+  .footer__banner .footer__content-main img {
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondary-color);
+  }
+
+  .footer__main-title {
+    width: 568px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    /* or 125% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+  }
+
+  .footer__content-secondary {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  .footer__content-secondary .footer__content-banner:first-child {
+    border-right: 1px solid var(--white-color);
+    /* line-height: 400px; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    /* or 112% */
+    color: var(--white-color);
+
+    letter-spacing: -0.5px;
+  }
+
+  .footer__content-secondary .footer__content-banner {
+    height: 400px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__content-secondary .footer__content-banner:nth-child(2) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    text-align: start;
+    padding-left: 120px;
+  }
+
+  .footer__content-link {
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+  }
+
+  .footer__content-link p {
+    font-style: normal;
+    width: 367px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    /* or 125% */
+
+    letter-spacing: -0.5px;
+  }
+
+  .footer__banner-mobile {
+    display: none;
+  }
+
+  .footer__logo {
+    margin: 4rem auto 1.5rem;
+    justify-content: center;
+  }
+
+  .footer__logo img {
+    width: 48px;
+    height: 48px;
+  }
+  .footer__logo p {
+    font-size: 40px;
+  }
+
+  .footer__logo p span {
+    width: 8px;
+    height: 8px;
+  }
+
+  .footer__desc {
+    width: 80%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0 auto;
+
+    text-align: center;
+    color: var(--deactive-color);
+    border-bottom: 1px solid var(--gray-color);
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .footer__desc p {
+    width: 565px;
+    margin: auto;
+  }
+
+  .navigation__footer {
+    display: block;
+  }
+
+  .navigation__footer ul {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  .navigation__footer .navigation__item a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+  }
+
+  .navigation__footer .navigation__item.active-menu a {
+    color: var(--primary-color);
+  }
+
+  .select-footer-mobile {
+    display: none;
+  }
+
+  .footer__info {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: var(--deactive-color);
+    padding-bottom: 1rem;
+  }
+
+  .footer__info .sidebar__socmed {
+    display: none;
+  }
+
+  .footer__info-socmed,
+  .footer__info span {
+    display: block;
+    width: 50%;
+  }
+
+  .footer__info-socmed {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer__info-socmed p,
+  .footer__info-socmed img {
+    cursor: pointer;
+  }
+
+  .footer__info-socmed p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    /* color/primary */
+
+    color: var(--primary-color);
+  }
+
+  .footer__info span {
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
